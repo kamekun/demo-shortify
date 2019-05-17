@@ -1,0 +1,20 @@
+ip: 192.168.10.250
+memory: 2048
+cpus: 1
+provider: virtualbox
+authorize: ~/.ssh/id_rsa.pub
+keys:
+    - ~/.ssh/id_rsa
+folders:
+    -
+        map: /Users/myuser/projects/shortify
+        to: /home/vagrant/shortify
+        type: "nfs"
+sites:
+    -
+        map: shortify.test
+        to: /home/vagrant/shortify/public
+databases:
+    - homestead
+name: shortify
+hostname: shortify
