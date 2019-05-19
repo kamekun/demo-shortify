@@ -75,7 +75,7 @@ we make a few case scenerario in order to keep the code up and running, in the f
 ```
 $ php phpunit
 ```
-![tests cases](https://imgur.com/a/IXJQNdb)
+![tests cases](https://i.imgur.com/nUlaMBL.png)
 
 ## Licenses
 shortify is a software licensed under the [MIT license](https://opensource.org/licenses/MIT).
