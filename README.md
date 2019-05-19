@@ -51,12 +51,12 @@ we can  always improve our generare perform:
 [by adopting others algithms]( https://www.quora.com/What-are-the-http-bit-ly-and-t-co-shortening-algorithms )
 
 ### Endpoints
-![list available endpoints](https://cdn1.imggmi.com/uploads/2019/5/19/f1e7050137aa7a3cce25d66545419cca-full.png)
+![list available endpoints](https://i.imgur.com/aeuWctS.png)
 
 ```
 POST: /api/urls : set an shortify url, it return an array with the shortify URL,  the url you are shortifying, a hashe and a code, the hash is the URL for your shortify ex. sBv and the code is an access token point to get more specific info about your shortify URL or even deleted from the system.
 
-![shortify created succefully](https://imgur.com/0yfxCs1)
+![shortify created succefully](https://i.imgur.com/tKMyOwp.png)
 
 GET: /api/urls/{hash} : with this you can get the info for your shortify URL, you need to pass an aditional query string `code` in order to get this info, so nobody except you and us have access to this sencitive info.
 
@@ -68,7 +68,7 @@ GET: /api/top : get the top 100 urls sort by access, this is an enpoint for us t
 
 We dont allow  porn on our website, for that we have an blacklist rule, so  you cant shortify urls that have certain words on it, of you think it is a mistake, send us the link at contact@shortify.com and we will sort it out for you adding it to our whitelist in case passes our internal validation.
 
-![blacklist words](https://imgur.com/qI4GBNe)
+![blacklist words](https://i.imgur.com/qI4GBNe.png)
 
 ## tests cases
 we make a few case scenerario in order to keep the code up and running, in the future we can set a few CI with the test.
