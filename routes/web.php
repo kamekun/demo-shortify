@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+// URL Web Endpoints
+Route::get('/top', 'Shortify\Urls@top');
+Route::get('{shortify}',[ 'Shortify\urls@transfer', 'as' => 'transfer'] )->where('shortify', '[A-Za-z]+');
