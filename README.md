@@ -3,6 +3,8 @@ Demo Shortify is a URL shortly app based on laravel for learning purposes,
 It was made to just a POC so always can be upgraded / optimize.
 ![logo](https://i.imgur.com/WGZ1AdF.png)
 
+![logo](https://i.imgur.com/WGZ1AdF.png)
+
 ## Development - Getting started
 
 In order to be more productive the project will be running with homestead / vagrant. Please follow the next steps in order to get running the environment.
