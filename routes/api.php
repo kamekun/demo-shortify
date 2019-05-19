@@ -16,3 +16,11 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+// URL API Endpoints
+Route::name('api')->group(function () {
+    Route::get('top', 'Shortify\Urls@top')->name('top');
+    Route::post('/urls', ['uses' => 'Shortify\Urls@store', 'as' => '.store']);
+    Route::get('urls/{code}', ['uses' => 'Shortify\Urls@show', 'as' => '.show']);
+    Route::delete('urls/{code}', ['uses' => 'Shortify\Urls@delete', 'as' => '.delete']);
+});
